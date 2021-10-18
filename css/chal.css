@@ -1,0 +1,354 @@
+body {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  width: 950px;
+  height: 1459px;
+  margin: 67px auto;
+}
+.box1 {
+  background-color: white;
+  padding: 10px;
+  height: 300px;
+  position: relative;
+}
+.container .box1 .im1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #9e9e9e;
+}
+.box1::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 319px;
+  left: 248px;
+  top: 0px;
+  z-index: 2;
+  background-color: #e0e0e0;
+}
+
+.container .box1 .top_right {
+  width: 690px;
+  height: 282px;
+  position: relative;
+  top: 0;
+  left: 245px;
+  background-color: white;
+}
+.container .box1 .top_right .p1 {
+  color: #9e9e9e;
+  line-height: 35px;
+}
+.container .box1 .top_right .nub {
+  top: 242px;
+  left: 523px;
+  position: absolute;
+  color: #9e9e9e;
+}
+.container .box1 .top_left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  width: 242px;
+  height: 318px;
+  top: -311px;
+  left: -5px;
+  justify-content: center;
+  align-items: center;
+}
+.container .box1 .top_left span {
+  color: #62b665;
+}
+
+.container .box1 .top_left::before {
+  content: "";
+  position: absolute;
+  width: 219px;
+  border-radius: 5px;
+  top: 228px;
+  height: 16px;
+  background-color: #e0e0e0;
+  background-image: linear-gradient(to right, #62b665 75%, transparent 25%);
+}
+
+.box2 {
+  position: relative;
+  background-color: white;
+  height: 220px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.container .box5 hr,
+.container .box2 hr {
+  background-color: #f5f5f5;
+  border: none;
+  height: 1px;
+}
+
+.container .box3 .p1 {
+  position: relative;
+  top: -225px;
+  left: 10px;
+}
+.container .box5 .p1,
+.container .box4 .p1,
+.container .box3 .p1,
+.container .box2 .p1 {
+  width: fit-content;
+  height: fit-content;
+  background-color: #9e9e9e;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  padding: 7px;
+}
+.container .box2 .sp1 {
+  color: #62b665;
+  font-weight: bold;
+}
+.container .box2 .sp2 {
+  color: red;
+  font-weight: bold;
+}
+
+.box3 {
+  position: relative;
+  margin-top: 20px;
+  background-color: white;
+  display: grid;
+  gap: 1px 1px;
+  grid-template-columns: repeat(2, 77px);
+  grid-template-rows: repeat(12, 77px);
+  padding: 10px;
+  padding-top: 73px;
+  width: fit-content;
+  height: 166px;
+}
+
+:root {
+  --with: 77px;
+  --height: 77px;
+}
+.im2 {
+  grid-area: 1/1/2/2;
+  width: var(--with);
+  height: var(--height);
+}
+
+.im3 {
+  grid-area: 1/2/2/3;
+  width: var(--with);
+  height: var(--height);
+}
+.im4 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 1/3/2/4;
+}
+.im5 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 1/4/2/5;
+}
+.im6 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 1/5/2/6;
+}
+.im7 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 1/6/2/7;
+  opacity: 0.2;
+}
+.im8 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 1/7/2/8;
+}
+.im9 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 1/8/2/9;
+}
+.im10 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 1/9/2/10;
+}
+.im11 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 1/10/2/11;
+  opacity: 0.2;
+}
+.im12 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 1/11/2/12;
+}
+.im13 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 1/12/2/13;
+}
+.im14 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 2/1/3/2;
+}
+.im15 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 2/2/3/3;
+  opacity: 0.2;
+}
+.im16 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 2/3/3/4;
+}
+.im17 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 2/4/3/5;
+  opacity: 0.2;
+}
+.im18 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 2/5/3/6;
+}
+.im19 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 2/6/3/7;
+}
+.im20 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 2/7/3/8;
+  opacity: 0.2;
+}
+.im21 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 2/8/3/9;
+}
+.im22 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 2/9/3/10;
+}
+.im23 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 2/10/3/11;
+}
+.im24 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 2/11/3/12;
+}
+.im25 {
+  width: var(--with);
+  height: var(--height);
+  grid-area: 2/12/3/13;
+}
+.container .box4 {
+  position: relative;
+  width: 912px;
+  height: 94px;
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+}
+.container .box4 .re1 {
+  color: red;
+  font-weight: bold;
+}
+.container .box4 .bl1 {
+  color: rgb(0, 162, 255);
+  font-weight: bold;
+}
+
+.container .box5 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+.container .box1::after {
+  content: "";
+  position: absolute;
+  width: 947px;
+  height: 1px;
+  left: 1px;
+  top: 329px;
+  background-color: #eae8e8;
+  z-index: 2;
+}
+.container .box2::after {
+  content: "";
+  position: absolute;
+  width: 947px;
+  height: 1px;
+  left: 1px;
+  top: 270px;
+  background-color: #eae8e8;
+  z-index: 2;
+}
+.container .box3::after {
+  content: "";
+  position: absolute;
+  width: 951px;
+  height: 1px;
+  left: 1px;
+  top: 259px;
+  background-color: #eae8e8;
+  z-index: 2;
+}
+.container .box4::after {
+  content: "";
+  position: absolute;
+  width: 947px;
+  height: 1px;
+  left: 1px;
+  top: 144px;
+  background-color: #eae8e8;
+  z-index: 2;
+}
+.container .box5::after {
+  content: "";
+  position: absolute;
+  width: 947px;
+  height: 1px;
+  left: 1px;
+  top: 414px;
+  background-color: #eae8e8;
+  z-index: 2;
+}
+.container .box5 .ye1::after {
+  content: "Yes";
+  position: absolute;
+  color: green;
+  font-weight: bold;
+  left: 900px;
+}
+.container .box5 .n1::after {
+  content: "No";
+  position: absolute;
+  color: red;
+  font-weight: bold;
+  left: 900px;
+}
